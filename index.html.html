@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+         .menu{
+            width: 22%;
+            position: fixed;
+            background-color: #f44336;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        .head{
+            margin-top: 100px;
+            margin-left: 40px;
+            color: white;
+            font-size: 28px;
+            font-weight: bolder;
+
+        }
+        .list{
+            margin-left: 40px;
+            margin-top: 100px;
+        }
+        .list ul li{
+            list-style: none;
+            color: white;
+            font-size: 22px;
+            margin-top: 20px;
+            font-weight: bolder;
+        }
+        .right{
+            margin-left: 22%;
+            height: 100vh;
+            width: 78%;
+        }
+        .rightin{
+            width: 90%;
+            margin: auto;
+        }
+        .inter{
+            font-weight: bold;
+            font-size: 60px;
+            margin-top: 100px;
+            font-family: "Poppins", sans-serif;
+        }
+        .show{
+            margin-top: 20px;
+        }
+        .mainhead{
+            font-family: "Poppins", sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            color: #f44336;
+            border-width: 5px;
+        }
+        .line{
+            border: 5px solid #f44336;
+            width: 50px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        .showgrid{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            justify-content: space-between;
+        }
+        .showimg{
+            width: 49%;
+            margin-top: 5px;
+        }
+        .showimg img{
+            width: 100%;
+            height: 100%; 
+            opacity: 0.8;
+        }
+        .showimg img:hover{
+            opacity: 1;
+        }
+        .service{
+            margin-top: 60px;
+        }
+        .paratext{
+            margin-top: 20px;
+        }
+        .paratext p{
+            font-family: "Poppins", sans-serif;
+            font-size: 20px;
+        }
+        .designer{
+            margin-top: 60px;
+        }
+        .designgrid{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            justify-content: space-between;  
+        }
+        .person{
+            width: 32%;
+            background-color: #f1f1f1;
+        }
+        .person img{
+            width: 100%;
+            filter: grayscale(75%);
+        }
+        .persontext{
+            font-family: "Poppins", sans-serif;
+            padding: 20px;
+            top: 0px;
+        }
+        .persontext h3{
+            font-size: 25px;
+        }
+        .persontext .designation{
+            color: grey;
+            margin: 20px 0px;
+            font-size: 18px;
+        }
+        .persontext p{
+            font-size: 18px;
+        }
+        .package{
+            margin-top: 60px;
+        }
+        .package p{
+            font-size: 20px;
+        }
+        .boxout{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            justify-content: space-between; 
+        }
+        .box{
+            width: 49%;
+            background-color: #f1f1f1;
+        }
+        .box ul{
+            text-align: center;
+        }
+        .box ul li{
+            list-style: none;
+            padding: 18px;
+            border-bottom: 1px solid #ddd;
+            font-family: "Poppins", sans-serif;
+            font-size: 18px;
+        }
+        .base{
+            padding: 35px !important;
+            font-size: 25px !important;
+            color: white;
+        }    
+        .price{
+            font-size: 30px;
+        }
+        .per{
+            color: grey;
+        }
+        #basic{
+            background-color: #616161;
+        }
+        #pro{
+            background-color: red;
+        }
+        .sign{
+            padding: 10px 20px;
+        }
+        a{
+            text-decoration: none;
+
+        }
+        .last span:hover{
+            background-color: black !important;
+            color: white !important;
+        }
+        .last{
+            padding: 35px 0px !important;
+        }
+        #up1{
+            background-color: white;
+            color: black;
+        }
+        #up2{
+            background-color: red;
+            color: white !important;
+        }
+        .contact{
+            margin-top: 60px;
+        }
+        .contact p{
+            font-size: 20px;
+        }
+        .contactdetail{
+            padding-top: 20px;
+        }
+        .form{
+            margin-top: 15px;
+            width: 100%;
+            font-family: "Poppins", sans-serif;
+        }
+        .form input{
+            padding: 10px 15px;
+            border: 1px rgb(176, 175, 175) solid;
+            width: 96%;
+        }
+        .button{
+            font-size: 15px;
+            background-color: red;
+            color: rgb(241, 237, 237);
+            padding: 15px !important;
+            width: 99% !important;
+            border: none;
+            display: block;
+        }
+        .bottom{
+            margin-top: 50px !important;
+            color: rgb(5, 0, 0);
+            text-align: right;
+            background-color: #f1f1f1;
+            padding: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="head">Company <br> Name</div>
+        <div class="list">
+            <ul>
+                <li>Home</li>
+                <li>Showcase</li>
+                <li>Services</li>
+                <li>Designers</li>
+                <li>Packages</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+        <div class="rightin">
+            <div class="inter">Interior Design</div>
+            <div class="show">
+                <div class="mainhead">Showcase.</div>
+                <div class="line"></div>
+                <div class="showgrid">
+                    <div class="showimg"><img src="https://www.w3schools.com/w3images/kitchenconcrete.jpg" alt=""> </div>
+                    <div class="showimg"><img src="https://www.w3schools.com/w3images/atrium.jpg" alt=""> </div>
+                    <div class="showimg"><img src="https://www.w3schools.com/w3images/livingroom.jpg" alt=""> </div>
+                    <div class="showimg"><img src="https://www.w3schools.com/w3images/bedroom.jpg" alt=""> </div>
+                    <div class="showimg"><img src="https://www.w3schools.com/w3images/diningroom.jpg" alt=""> </div>
+                    <div class="showimg"><img src="https://www.w3schools.com/w3images/livingroom2.jpg" alt=""> </div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="mainhead">Services.</div>
+                <div class="line"></div>
+                <div class="paratext">
+                    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p> <br>
+                    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div> 
+            </div>
+            <div class="designer">
+                <div class="mainhead">Designers.</div>
+                <div class="line"></div>
+                <div class="paratext">
+                    <p>The best team in the world.</p> <br>
+                    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> <br>
+                    <p><b>Our designers are thoughtfully chosen:</b></p>
+                </div>
+                <div class="designgrid">
+                    <div class="person">
+                        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+                        <div class="persontext">
+                            <h3>John Doe</h3>
+                            <p class="designation">CEO & Founder</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <img src="https://www.w3schools.com/w3images/team1.jpg" alt="">
+                        <div class="persontext">
+                            <h3>Jane Doe</h3>
+                            <p class="designation">Designer</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <img src="https://www.w3schools.com/w3images/team3.jpg" alt="">
+                        <div class="persontext">
+                            <h3>Mike Ross</h3>
+                            <p class="designation">Architect</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="package">
+                <div class="mainhead">Packages.</div>
+                <div class="line"></div>
+                <br>
+                <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+                <div class="boxout">
+                    <div class="box">
+                        <ul>
+                            <li class="base" id="basic">Basic</li>
+                            <li>Floorplanning</li>
+                            <li>10 hours support</li>
+                            <li>Photography</li>
+                            <li>20% furniture discount</li>
+                            <li>Good deals</li>
+                            <li>
+                                <span class="price">$ 199</span><br><br>
+                                <span class="per">per room</span>
+                            </li>
+                            <li class="last"><span class="sign" id="up1">Sign Up</span></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <ul>
+                            <li class="base" id="pro">Pro</li>
+                            <li>Floorplanning</li>
+                            <li>50 hours support</li>
+                            <li>Photography</li>
+                            <li>50% furniture discount</li>
+                            <li>Good deals</li>
+                            <li>
+                                <span class="price">$ 249</span><br><br>
+                                <span class="per">per room</span>
+                            </li>
+                            <li class="last"><span class="sign" id="up2">Sign Up</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="mainhead">Contact.</div>
+                <div class="line"></div>
+                <br>
+                <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+                <div class="form">
+                    <form action="">
+                        <label for="username">Name</label><br>
+                        <input type="text" name="username"><br><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" ><br><br>
+                        <label for="messages">Messages</label><br>
+                        <input type="text"><br><br>
+                        <button type="submit" class="button">Send Messages</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">Powered by w3.css</div> 
+    </div>  
+</body>
+</html>
